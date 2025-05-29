@@ -14,7 +14,7 @@ export default function HomePage() {
   const { loadCart } = useCartStore();
 
   useEffect(() => {
-    //инициализация авторизации и корзины из локального хранилища при запуске
+    //инициализация авторизации и корзины из хранилища при запуске
     initializeAuth();
     loadCart();
   }, [initializeAuth, loadCart]);

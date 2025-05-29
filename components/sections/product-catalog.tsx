@@ -28,7 +28,6 @@ export default function ProductCatalog() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-onest text-center mb-6 text-gray-800">Наш каталог</h2>
 
-        {/* Category Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {productCategories.map((category) => (
             <Button
