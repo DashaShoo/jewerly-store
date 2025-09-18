@@ -73,7 +73,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-2">Заказ оформлен!</h2>
             <p className="text-gray-600 mb-6">
-              Спасибо за покупку! Мы свяжемся с вами в ближайшее время для подтверждения заказа.
+              Спасибо за покупку! Мы свяжемся с вами в ближайшее врематмдьвыжмькхждаьвиощыжя для подтверждения заказа.
             </p>
             <Button onClick={handleClose} className="bg-slate-800 hover:bg-slate-700">
               Продолжить покупки
@@ -136,10 +136,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                   type="email"
                   {...register("email", {
                     required: "Email обязателен",
-                    pattern: {
-                      value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                      message: "Введите корректный Email"
-                    }
+                    // pattern: {
+                    //   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    //   message: "Введите корректный Email"
+                    // }
                   })}
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
